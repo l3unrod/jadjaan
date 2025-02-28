@@ -207,34 +207,111 @@
 
                 <div class="question">
                     <label>9. Have you ever bought Thai Ready-to-cook products before?</label><br>
-                    <input type="radio" id="yes_bought" name="bought_before" value="Yes">
+                    <input type="radio" id="yes_bought" name="bought_before" class = "skip01" value="Yes">
                     <label for="yes_bought">Yes</label><br>
-                    <input type="radio" id="no_bought" name="bought_before" value="No">
+                    <input type="radio" id="no_bought" name="bought_before" class = "skip01" value="No">
                     <label for="no_bought">No</label>
                 </div>
             </div>
 
             {{-- Section 3 --}}
-            <div class="section_3" style="display: none;">
-                <h3>Section 3: Preferences for Thai Ready-to-Cook Products</h3>
-                <div class="question">
-                    <label for="reason_for_buying">3.1 Q. What is your purpose for buying Thai Ready-to-cook products?</label><br>
-                    <input type="checkbox" id="personal_consumption" name="reason_for_buying[]" value="For personal consumption">
-                    <label for="personal_consumption">For personal consumption</label><br>
+            <div class="section_3" style="display: block;">
+            <h3>Section 3: Preferences for Thai Ready-to-Cook Products</h3>
 
-                    <input type="checkbox" id="try_new_flavors" name="reason_for_buying[]" value="Try new and authentic flavors">
-                    <label for="try_new_flavors">Try new and authentic flavors</label><br>
+<div class="section_3_1">
+    <div class="question">
+        <label for="reason_for_buying">3.1 Q. What is your purpose for buying Thai Ready-to-Cook products?</label><br>
+        <input type="checkbox" id="personal_consumption" name="reason_for_buying" value="For personal consumption">
+        <label for="personal_consumption">For personal consumption</label><br>
+        
+        <input type="checkbox" id="try_new_flavors" name="reason_for_buying" value="Try new and authentic flavors">
+        <label for="try_new_flavors">Try new and authentic flavors</label><br>
+        
+        <input type="checkbox" id="convenience_time_saving" name="reason_for_buying" value="For convenience and time-saving">
+        <label for="convenience_time_saving">For convenience and time-saving</label><br>
+        
+        <input type="checkbox" id="corporate_gifting" name="reason_for_buying" value="For corporate gifting or special events">
+        <label for="corporate_gifting">For corporate gifting or special events</label><br>
+        
+        <input type="checkbox" id="others" name="reason_for_buying" value="Others">
+        <label for="others">Others</label><br>
+    </div>
+</div>
 
-                    <input type="checkbox" id="convenience_time_saving" name="reason_for_buying[]" value="For convenience and time-saving">
-                    <label for="convenience_time_saving">For convenience and time-saving</label><br>
+<
 
-                    <input type="checkbox" id="corporate_gifting" name="reason_for_buying[]" value="For corporate gifting or special events">
-                    <label for="corporate_gifting">For corporate gifting or special events</label><br>
+<div class="section_3_2">
+    <div class="question">
+        <label for="reason_not_purchased">3.2 Q1. What are the reasons you have not purchased Thai Ready-to-Cook products?</label><br>
+        <input type="checkbox" id="price_high" name="reason_not_purchased" value="Price too high">
+        <label for="price_high">Price too high</label><br>
+        <input type="checkbox" id="concern_quality" name="reason_not_purchased" value="Concern about quality">
+        <label for="concern_quality">Concern about quality</label><br>
 
-                    <input type="checkbox" id="others_reason" name="reason_for_buying[]" value="Others">
-                    <label for="others_reason">Others</label>
-                    <input type="text" id="other_buying_reason" name="other_buying_reason" placeholder="Please specify" style="margin-left: 10px;">
-                </div>
+        <input type="checkbox" id="concern_taste" name="reason_not_purchased" value="Concern about taste">
+        <label for="concern_taste">Concern about taste</label><br>
+
+        <input type="checkbox" id="concern_ingredients" name="reason_not_purchased" value="Concern about unfamiliar ingredients">
+        <label for="concern_ingredients">Concern about unfamiliar ingredients</label><br>
+
+        <input type="checkbox" id="others" name="reason_not_purchased" value="Others">
+        <label for="others">Others</label><br>
+
+        <input type="checkbox" id="limited_availability" name="reason_not_purchased" value="Limited availability in local stores">
+        <label for="limited_availability">Limited availability in local stores</label><br>
+    </div>
+</div>
+
+<div class="section_3_2">
+    <div class="question">
+        <label for="appealing_factors">3.2 Q2. If you were to purchase a Thai Ready-to-Cook product, what appeals to you the most?</label><br>
+        <input type="checkbox" id="convenience" name="appealing_factors" value="Convenience">
+        <label for="convenience">Convenience</label><br>
+
+        <input type="checkbox" id="authentic_taste" name="appealing_factors" value="Authentic taste">
+        <label for="authentic_taste">Authentic taste</label><br>
+
+        <input type="checkbox" id="healthy_ingredients" name="appealing_factors" value="Healthy ingredients">
+        <label for="healthy_ingredients">Healthy ingredients</label><br>
+
+        <input type="checkbox" id="affordability" name="appealing_factors" value="Affordability">
+        <label for="affordability">Affordability</label><br>
+
+        <input type="checkbox" id="easy_instructions" name="appealing_factors" value="Easy instructions">
+        <label for="easy_instructions">Easy instructions</label><br>
+
+        <input type="checkbox" id="brand_reputation" name="appealing_factors" value="Brand reputation">
+        <label for="brand_reputation">Brand reputation</label><br>
+
+        <input type="checkbox" id="sustainability" name="appealing_factors" value="Sustainability">
+        <label for="sustainability">Sustainability</label><br>
+
+        <input type="checkbox" id="others" name="appealing_factors" value="Others">
+        <label for="others">Others</label><br>
+    </div>
+  <div class="section_3_2">
+    <div class="question">
+        <label for="willing_to_spend">3.2 How much are you willing to spend on a ready-to-cook Thai product? (Package for 2 Servings)</label><br>
+        <input type="radio" id="under_500" name="willing_to_spend" value="Under ¥500">
+        <label for="under_500">Under ¥500</label><br>
+        
+        <input type="radio" id="500_1000" name="willing_to_spend" value="¥500–¥1,000">
+        <label for="500_1000">¥500–¥1,000</label><br>
+        
+        <input type="radio" id="1000_1500" name="willing_to_spend" value="¥1,000–¥1,500">
+        <label for="1000_1500">¥1,000–¥1,500</label><br>
+        
+        <input type="radio" id="over_1500" name="willing_to_spend" value="Over ¥1,500">
+        <label for="over_1500">Over ¥1,500</label><br>
+    </div>
+</div>
+</div>
+
+
+    
+
+
+
             </div>
 
             {{-- Section 4 --}}
@@ -324,6 +401,21 @@
                     $('.section_5').css('display', 'block')
 
                 }
+            });
+
+            $('.skip01').click(function (e) {
+                let selectedValue = $(this).val();
+                if (selectedValue == 'Yes') {
+                    $('.section_3_1').css('display', 'block')
+                    $('.section_3_2').css('display', 'none')
+                //    console.log(selectedValue);
+                   
+                }else {
+                    $('.section_3_1').css('display', 'none')
+                    $('.section_3_2').css('display', 'block')
+
+                }
+                
             });
         });
         document.addEventListener('DOMContentLoaded', function() {
