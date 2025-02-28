@@ -309,10 +309,71 @@
 
 
     
+    <div class="question">
+    <label>12. What appeals to you most in Thai Ready-to-cook products? (Able to select more than one option)</label><br>
+    <input type="checkbox" id="convenience" name="appeal[]" value="Convenience">
+    <label for="convenience">Convenience</label><br>
+    <input type="checkbox" id="authentic_taste" name="appeal[]" value="Authentic taste">
+    <label for="authentic_taste">Authentic taste</label><br>
+    <input type="checkbox" id="healthy_ingredients" name="appeal[]" value="Healthy ingredients">
+    <label for="healthy_ingredients">Healthy ingredients</label><br>
+    <input type="checkbox" id="affordability" name="appeal[]" value="Affordability">
+    <label for="affordability">Affordability</label><br>
+    <input type="checkbox" id="easy_instructions" name="appeal[]" value="Easy instructions">
+    <label for="easy_instructions">Easy instructions</label><br>
+    <input type="checkbox" id="brand_reputation" name="appeal[]" value="Brand reputation">
+    <label for="brand_reputation">Brand reputation</label><br>
+    <input type="checkbox" id="sustainability" name="appeal[]" value="Sustainability">
+    <label for="sustainability">Sustainability</label><br>
+    <input type="checkbox" id="others_appeal" name="appeal[]" value="Others">
+    <label for="others_appeal">Others:</label>
+    <input type="text" name="other_appeal" placeholder="Please specify" style="margin-left: 10px;">
+</div>
+
+<div class="question">
+    <label>13. What types of Thai dishes would you like as ready-to-cook products? (Able to select more than one option)</label><br>
+
+    <!-- Soup (หมวดซุป) -->
+    <input type="checkbox" id="tom_kha" name="thai_dishes[]" value="Tom Kha">
+    <label for="tom_kha">1. Tom Kha </label><br>
+    <input type="checkbox" id="tom_yam" name="thai_dishes[]" value="Tom Yam">
+    <label for="tom_yam">2. Tom Yam </label><br>
+
+    <!-- Curry (หมวดแกง) -->
+    <input type="checkbox" id="panang_curry" name="thai_dishes[]" value="Panaeng Curry">
+    <label for="panang_curry">3. Panaeng Curry </label><br>
+    <input type="checkbox" id="massaman_curry" name="thai_dishes[]" value="Massaman Curry">
+    <label for="massaman_curry">4. Massaman Curry </label><br>
+    <input type="checkbox" id="green_curry" name="thai_dishes[]" value="Green Curry">
+    <label for="green_curry">5. Green Curry </label><br>
+    <input type="checkbox" id="red_curry" name="thai_dishes[]" value="Red Curry">
+    <label for="red_curry">6. Red Curry </label><br>
+    <input type="checkbox" id="khao_soi" name="thai_dishes[]" value="Khao Soi">
+    <label for="khao_soi">7. Khao Soi </label><br>
+
+    <!-- Stir-fry and Others (หมวดผัดและอื่นๆ) -->
+    <input type="checkbox" id="pad_thai" name="thai_dishes[]" value="Phod Thai">
+    <label for="pad_thai">8. Phod Thai </label><br>
+    <input type="checkbox" id="shrimp_paste" name="thai_dishes[]" value="Shrimp Paste">
+    <label for="shrimp_paste">9. Shrimp Paste </label><br>
+    <input type="checkbox" id="stir_fry_basil" name="thai_dishes[]" value="Stir-fry Holy Basil">
+    <label for="stir_fry_basil">10. Stir-fry Holy Basil "Krapao" </label><br>
+    <input type="checkbox" id="other_dishes" name="thai_dishes[]" value="Others">
+    <label for="other_dishes">11. Others:</label>
+    <input type="text" name="other_thai_dishes" placeholder="Please specify" style="margin-left: 10px;"><br>
+    <span id="error-message" style="color: red; display: none;">You can only select up to 5 options.</span>
+</div>
+<div class="question">
+    <label for="buy_ready_to_cook">(ข้อหลัก)11. Would you consider buying a Thai Ready-to-cook Thai product if it were available in your area?</label><br>
+    <input type="radio" id="yes_ready_to_cook" name="buy_ready_to_cook" value="Yes">
+    <label for="yes_ready_to_cook">Yes</label><br>
+    <input type="radio" id="no_ready_to_cook" name="buy_ready_to_cook" value="No">
+    <label for="no_ready_to_cook">No</label><br>
+    </div>
+</div>
 
 
-
-            </div>
+           
 
             {{-- Section 4 --}}
             <div class="section_4">
